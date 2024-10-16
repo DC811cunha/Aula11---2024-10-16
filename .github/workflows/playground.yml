@@ -1,23 +1,19 @@
 name: Testando github actions
-
+ 
 on: [push, pull_request]
-
+ 
 jobs:
   linux_job:
-    
     runs-on: ubuntu-latest
-
+ 
     steps:
       - name: Executa echo
         run: echo blah > tmp.txt
-
       - name: Executa ls
         run: ls
-
   windows_job:
-
-        runs-on: windows-latest
-
-        steps:
-        - name: Lista dir
-            run: dir
+    runs-on: windows-latest
+ 
+    steps:
+      - name: Lista dir
+        run: dir
