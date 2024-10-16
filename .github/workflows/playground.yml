@@ -10,3 +10,6 @@ jobs:
     steps:
       - name: Executa echo
         run: echo hello world!
+
+      - name: Executa pwd
+        run: pwd  
